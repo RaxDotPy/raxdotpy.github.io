@@ -1,7 +1,8 @@
 :root {
     --primary-color: #affc41;
     --secondary-color: #b2ff9e;
-    --primary-font: 'Ubuntu', sans-serif;
+    --primary-font: 'Arial', sans-serif;
+    --secondary-font: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     --primary-line-height: 2.5;
     --secondary-line-height: 1.5;
     --primary-background-color: #3c1642;
@@ -32,6 +33,7 @@ p {
 
  h1, h2, h3 {
     color: var(--secondary-color);
+    font-family: var(--secondary-font);
     line-height: var(--secondary-line-height);
     animation-name:  mytextAnimation;
     animation-duration: 3s;
