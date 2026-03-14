@@ -1,17 +1,38 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Raymond Paradell - Programador Junior Full Stack</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <h1>Raymond Paradell</h1>
-    <p>Programador Full Stack, tecnologías conocidas: Python, JavaScript, Html, CSS, Microsoft Excel, Microsoft SQL-Server, PSeint.</p>
-    <h2>Educación:</h2>
-    <p class="titulo">Bachiller en Matemáticas y Tecnología, Colegio Santo Domingo, Santo Domingo, República Dominicana. (2016-2020)</p>
-    <p class="titulo">Tecnólogo en Desarrollo de Software, Instituto Tecnológico de las Américas (ITLA), Las Américas, República Dominicana. (Aún en curso, fecha de inicio: 2022)</p>
-    <p class="titulo">Licenciatura en Matemáticas, Universidad Autónoma de Santo Domingo (UASD), Santo Domingo, República Dominicana. (Aún en curso, fecha de inicio: 2025)</p>
-</body>
-</html>
+:root {
+    --primary-color: #affc41;
+    --secondary-color: #b2ff9e;
+    --primary-font: 'Ubuntu', sans-serif;
+    --primary-line-height: 2.5;
+    --secondary-line-height: 1.5;
+    --primary-background-color: #3c1642;
+}
+
+@keyframes myAnimation {
+    from {background-color: white;}
+    to {background-color: var(--primary-background-color);}
+}
+
+@keyframes mytextAnimation {
+    from {color: black;}
+    to {color: var(--primary-color);}
+}
+body {
+    background-color: var(--primary-background-color);
+    color: var(--primary-color);
+    font-family: var(--primary-font);
+    line-height: var(--primary-line-height);
+    animation-name:  myAnimation;
+    animation-duration: 2s;
+}
+
+p {
+    animation-name: mytextPositionAnimation;
+    animation-duration: 1s;
+}
+
+ h1, h2, h3 {
+    color: var(--secondary-color);
+    line-height: var(--secondary-line-height);
+    animation-name:  mytextAnimation;
+    animation-duration: 3s;
+}
