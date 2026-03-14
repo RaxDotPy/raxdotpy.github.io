@@ -26,6 +26,11 @@ body {
     animation-duration: 2s;
 }
 
+img[alt~="profile"] {
+    width: 100px;
+    height: 100px;
+}
+
 p {
     animation-name: mytextPositionAnimation;
     animation-duration: 1s;
