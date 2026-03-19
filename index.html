@@ -4,29 +4,37 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>RaxDotPy - Junior Software Developer</title>
-    <link rel="stylesheet" href="styles.css">
+
+    <!-- Link your stylesheet -->
+    <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <ul>
-        <a href="#index.html" class="navbar">Home</a>
-        <a href="#myeducation.html" class="navbar">Education</a>
-        <a href="#projects.html" class="navbar">Projects</a>
-        <a href="#contact.html" class="navbar">Contact</a>
-    </ul>
-    <div>
-        <img src="profile.webp" alt="profile" width="100" height="100">
-        <h1>Raymond Paradell</h1>
-        <p>Hi, I'm Raymond Paradell. I'm a junior software developer, I love tech, software, math and programming. On this website you will find my entire portfolio with my education and projects.</p>
-    </div>
-    <div>
-        <h2>Education:</h2>
-        <p class="titulo">Graduate in Mathematics and Technology | Colegio Santo Domingo (2016-2020)</p>
-        <p class="titulo">Associate of Applied Science in Software Development
-        Instituto Tecnológico de las Américas (ITLA), Dominican Republic
-        2022 – Present (Expected Graduation: 2027)</p>
-        <p class="titulo">Bachelor of Science in Mathematics
-        Universidad Autónoma de Santo Domingo (UASD), Dominican Republic
-        2025 – Present (Expected Graduation: 2029)</p>
-    </div>
+
+    <!-- Navigation -->
+    <nav id="navbar">
+        <div class="nav-logo">RaxDotPy</div>
+        <ul class="nav-links">
+            <li><a href="#home" id="home-link">Home</a></li>
+            <li><a href="#skills" id="skills-link">Skills</a></li>
+            <li><a href="#projects" id="projects-link">Projects</a></li>
+            <li><a href="#about-me" id="about-me-link">About Me</a></li>
+            <li><a href="#contact" id="contact-link">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main>
+
+        <!-- Hero Section — id added so #home link works -->
+        <section id="home">
+            <div class="hero-content">
+                <h1>Hi, I'm <span class="highlight">RaxDotPy</span></h1>
+                <p class="tagline">Junior Software Developer specializing in Python and web development.</p>
+                <!-- Fixed: #projects instead of "projects" -->
+                <a href="#projects" class="btn">See My Work</a>
+            </div>
+        </section>
+
+    </main>
+
 </body>
 </html>
